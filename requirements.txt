@@ -1,0 +1,2 @@
+robotframework-browser==3.1.0
+robotframework-requests==0.8.0

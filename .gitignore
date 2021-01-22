@@ -1,0 +1,12 @@
+#ROBOT
+log.html
+report.html
+output.xml
+playwright-log.txt
+
+#IDE
+.ide
+.vscode
+
+#Python
+libraries/__pycache__
