@@ -3,7 +3,7 @@ import requests
 import logging
 
 logger = logging.getLogger("LibraryAddrees")
-logger.addHandler(Config.HADELER_LOG)
+logger.addHandler(Config.HANDLER_LOG)
 logger.setLevel(Config.LOG_LEVEL)
 
 

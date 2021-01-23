@@ -18,4 +18,4 @@ ${ELEMENT_CREATE_KEY}             xpath=//span[contains(text(), "Create Key")]
 ${ELEMENT_KEY}                    xpath=//li[@class="api-key"]
 ${ELEMENT_TOKEN}                  xpath=//samp[contains(@data-reactid,'.0.2.0.1.0.0.0.1.0.0.1.0')]
 ${ELEMENT_DELETE_TOKE}            xpath=//button[@type='submit'][contains(.,'Delete Key')]
-${FILE_NAME}                      membros_do_cla.csv
+${FILE_NAME}                      membros_do_clan.csv
