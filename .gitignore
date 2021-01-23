@@ -10,3 +10,7 @@ playwright-log.txt
 
 #Python
 libraries/__pycache__
+
+#Project
+LogOperations.log
+membros_do_clan.csv

@@ -76,9 +76,9 @@ Através da API do Clash Royale, obtenha as informações do clã de nome "${CLA
 
 Utilizando a resposta da chamada do passo 1, realizar uma nova chamada para recuperar a lista de membros do clã.
     Log To Console  Buscando Lista de Membros do Clã.
-    ${LIST_MENBERS}  Get Members Clan  ${MY_TOKEN}  ${TAG}
-    Set Suite Variable  ${LIST_MENBERS}
+    ${LIST_MEMBERS}  Get Members Clan  ${MY_TOKEN}  ${TAG}
+    Set Suite Variable  ${LIST_MEMBERS}
 
 Por fim, escrever num arquivo .csv as seguintes informações de cada membro - nome(name), - level(expLevel), - troféus(trophies), - papel(role).
     Log To Console  Criando arquivo ${FILE_NAME}.
-    Create File Clan Members  ${FILE_NAME}  ${LIST_MENBERS}
+    Create File Clan Members  ${FILE_NAME}  ${LIST_MEMBERS}

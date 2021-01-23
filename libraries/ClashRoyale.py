@@ -6,24 +6,24 @@ import logging
 import json
 
 logger = logging.getLogger("LibraryClashRoyale")
-logger.addHandler(Config.HADELER_LOG)
+logger.addHandler(Config.HANDLER_LOG)
 logger.setLevel(Config.LOG_LEVEL)
 
 
 class ClashRoyale:
 
-    def __is_tag(self, menber, partial_tag):
+    def __is_tag(self, clan, partial_tag):
         logger.debug(
-            f"Verificando se o clã: {menber.get('name')} exite tag: {partial_tag}.")
-        tag = menber.get("tag")
+            f"Verificando se o clã: {clan.get('name')} exite tag: {partial_tag}.")
+        tag = clan.get("tag")
         if tag.startswith(partial_tag):
             logger.debug(f"Clã possui a tag: {partial_tag}.")
             return True
 
-    def __is_country(self, menber, country):
+    def __is_country(self, clan, country):
         logger.debug(
-            f"Verificando neste clã: {menber.get('name')} é do pais: {country}.")
-        lacation = menber.get("location")
+            f"Verificando neste clã: {clan.get('name')} é do pais: {country}.")
+        lacation = clan.get("location")
         if lacation["name"] == country:
             logger.debug(f"Clã é do pais: {country}.")
             return True
